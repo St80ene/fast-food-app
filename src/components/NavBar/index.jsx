@@ -7,7 +7,7 @@ import { AiOutLineClose } from 'react-icons/ai';
 const NavBar = () => {
   return (
     <header className={classes.header}>
-      <div className="class header__content">
+      <div className={classes.header__content}>
         <h2>Food Corner</h2>
       </div>
       <nav className={classes.header__content__nav}>
@@ -22,7 +22,7 @@ const NavBar = () => {
         </ul>
         <button>CTA Page</button>
         <div className={classes.header__content__toggle}>
-          <BiMenuAltRight/>
+          <BiMenuAltRight />
         </div>
       </nav>
     </header>
