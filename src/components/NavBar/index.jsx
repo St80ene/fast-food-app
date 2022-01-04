@@ -5,7 +5,7 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutLineClose } from 'react-icons/ai';
 
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>

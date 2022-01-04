@@ -133,11 +133,12 @@
       font-size: 2rem;
       transition: 0.3s ease all;
       position: relative;
-      color: $dark;
+      color: white;
 
       &:hover {
-        color: $primary;
-        // color: red;
+        // color: $primary;
+        color: red;
+        transition: 0.3s ease-in;
       }
 
       @include breakpoint(md) {
