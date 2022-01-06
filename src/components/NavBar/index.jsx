@@ -3,8 +3,10 @@ import classes from './NavBar.module.scss';
 import { MenuItems } from '../MenuItems';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { Link, useHistory } from 'react-router-dom';
 
 const NavBar = () => {
+  const history = useHistory()
   const [menuOpen, setMenuOpen] = useState(true);
   const [size, setSize] = useState({
     width: undefined,
@@ -29,13 +31,18 @@ const NavBar = () => {
     }
   }, [size.width, menuOpen]);
 
-  const menuToggleHandler = (event) => {
+  const menuToggleHandler = () => {
     setMenuOpen((page) => !page);
   };
+
+  console.log(classes.isMenu)
+
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        <h2 className={classes.header__content__logo}>Food Corner</h2>
+        <Link to={'/'} className={classes.header__content__logo}>
+          Food Corner
+        </Link>
 
         <nav
           className={`${classes.header__content__nav} ${
@@ -46,18 +53,20 @@ const NavBar = () => {
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href="#">{item}</a>
+                  <Link to={item.url} onClick={menuToggleHandler}>
+                    {item.page}
+                  </Link>
                 </li>
               );
             })}
           </ul>
-          <button>CTA Page</button>
+          {/* <button>CTA Page</button> */}
         </nav>
         <div className={classes.header__content__toggle}>
           {menuOpen ? (
-            <BiMenuAltRight onClick={menuToggleHandler} />
-          ) : (
             <AiOutlineClose onClick={menuToggleHandler} />
+          ) : (
+            <BiMenuAltRight onClick={menuToggleHandler} />
           )}
         </div>
       </div>
