@@ -1,10 +1,7 @@
 import './App.scss';
 import Layout from './components/Layout/Layout';
 import { Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import SignUp from './pages/SignUp';
-import About from './pages/About';
+import { Home, Contact, Services, Menu, Products } from './pages';
 
 function App() {
   return (
@@ -13,14 +10,17 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/login" exact>
-          <Login/>
+        <Route path="/contact" exact>
+          <Contact />
         </Route>
-        <Route path="/signUp" exact>
-          <SignUp/>
+        <Route path="/services" exact>
+          <Services />
         </Route>
-        <Route path="/about" exact>
-          <About/>
+        <Route path="/menu" exact>
+          <Menu />
+        </Route>
+        <Route path="/products" exact>
+          <Products />
         </Route>
       </Switch>
     </Layout>

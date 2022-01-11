@@ -1,11 +1,14 @@
 import React from 'react';
-import NavBar from '../NavBar';
-import classes from './Layout.module.scss'
+import Nav from '../Navbar';
+// import NavBar from '../NavBar';
+import classes from './Layout.module.scss';
+import './random.scss'
 
 function Layout({ children }) {
   return (
     <>
-      <NavBar />
+      <Nav />
+      {/* <NavBar /> */}
       <div className={classes.container}>{children}</div>
     </>
   );
