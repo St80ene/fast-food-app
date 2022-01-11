@@ -1,6 +1,7 @@
 export const MenuItems = [
-  { page: 'About Us', url: '/about' },
-  { page: 'Sign Up', url: '/signup' },
-  { page: 'Login', url: '/login' },
   { page: 'Home', url: '/#' },
+  { page: 'Menu', url: '/menu' },
+  { page: 'Services', url: '/services' },
+  { page: 'Products', url: '/products' },
+  { page: 'Contact', url: '/contact' },
 ];

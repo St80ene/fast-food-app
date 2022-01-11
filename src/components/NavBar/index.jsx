@@ -35,7 +35,6 @@ const NavBar = () => {
     setMenuOpen((page) => !page);
   };
 
-  console.log(classes.isMenu)
 
   return (
     <header className={classes.header}>
