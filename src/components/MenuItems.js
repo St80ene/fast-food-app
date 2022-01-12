@@ -1,7 +1,7 @@
 export const MenuItems = [
-  { page: 'Home', url: '/#' },
-  { page: 'Menu', url: '/menu' },
-  { page: 'Services', url: '/services' },
-  { page: 'Products', url: '/products' },
-  { page: 'Contact', url: '/contact' },
+  { page: 'Home', url: '/#', cName: 'navbar__navlinks__item' },
+  { page: 'Menu', url: '/menu', cName: 'navbar__navlinks__item' },
+  { page: 'Services', url: '/services', cName: 'navbar__navlinks__item' },
+  { page: 'Products', url: '/products', cName: 'navbar__navlinks__item' },
+  { page: 'Contact', url: '/contact', cName: 'navbar__navlinks__item' },
 ];
