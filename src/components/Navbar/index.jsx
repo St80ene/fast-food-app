@@ -20,28 +20,13 @@ function Nav() {
       <ul className={`navbar__navlinks ${openMenu ? 'isMenuOpen' : ''}`}>
         {MenuItems.map((item, index) => {
           return (
-            <li key={index}>
-              <Link to={item.url} onClick={menuToggleHandler}>
+            <li className={item.cName} key={index}>
+              <Link className={`${item.cName}__link`} to={item.url} onClick={menuToggleHandler}>
                 {item.page}
               </Link>
             </li>
           );
         })}
-        {/* <li className="navbar__navlinks__link">
-          <a href="#">Home</a>
-        </li>
-        <li className="navbar__navlinks__link">
-          <a href="#">Menu</a>
-        </li>
-        <li className="navbar__navlinks__link">
-          <a href="#">Services</a>
-        </li>
-        <li className="navbar__navlinks__link">
-          <a href="#">Products</a>
-        </li>
-        <li className="navbar__navlinks__link">
-          <a href="#">Contact</a>
-        </li> */}
       </ul>
       <div className="navbar__toggle">
         {openMenu ? (
