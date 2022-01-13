@@ -11,12 +11,14 @@ function HomePage() {
         <section className="hero-section">
           <div className="hero">
             <div className="hero__intro-text">
-              <p>Great calories in every bite.</p>
-              <h3>
-                It's not just Food,
-                <br />
-                It's an Experience.
-              </h3>
+              <div className="hero__intro-text__wrapper">
+                <p>Great calories in every bite.</p>
+                <h3>
+                  It's not just Food,
+                  <br />
+                  It's an Experience.
+                </h3>
+              </div>
             </div>
             <div className="hero__intro-image">
               <img alt="food" src={Second} />
@@ -31,20 +33,27 @@ function HomePage() {
             <p>Delicious cuisines</p>
           </div>
         </section>
-        {/* <section>
+        <section>
           <div className="experience">
-            <div className="experience__image">
+            <div className="experience__exImage">
               <img alt="salad" src={Salad} />
             </div>
-            <div className="experience__text">
-              <h3>
-                High Quality Food
-                <br />
-                Material.
-              </h3>
+            <div className="experience__exText">
+              <div className="experience__exText__wrapper">
+                <h3>
+                  High quality Food <br />
+                  you can trust
+                </h3>
+                <p>
+                  Continually producing whole meal that is good <br /> for your
+                  health.As our customer, we value your <br /> well-being. That
+                  is why we try our best to give <br />
+                  you that nutrition you so deserve
+                </p>
+              </div>
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
     </>
   );
