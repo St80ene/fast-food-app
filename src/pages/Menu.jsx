@@ -1,11 +1,8 @@
-import React from 'react'
+import React from 'react';
+import MenuPage from '../components/Menu';
 
 function Menu() {
-  return (
-    <div>
-      <p>Our Menu</p>
-    </div>
-  )
+  return <MenuPage />;
 }
 
 export default Menu;
