@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { MenuItems } from '../MenuItems';
 import './Navbar.scss';
 
