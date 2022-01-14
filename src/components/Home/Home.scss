@@ -35,8 +35,12 @@
       width: 100%;
       margin: 1rem auto;
 
+      & a {
+        color: #fbb97e;
+      }
+
       & > h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;
       }
       & > p {
@@ -134,12 +138,16 @@
     &__wrapper {
       width: 100%;
       margin: 1rem auto;
+
+      & a {
+        color: #fbb97e;
+      }
+      & h3 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
     }
 
-    & h3 {
-      font-size: 30px;
-      font-weight: bold;
-    }
 
     @media screen and (min-width: 850px) {
       width: 50%;
