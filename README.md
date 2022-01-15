@@ -2,7 +2,7 @@
 Rebuilding Fast Food Fast using React: An app to handle Food deliveries and orders
 
 #### Hosted link 
-[Heroku](https://ramba-contact.herokuapp.com/)
+[FoodCorner](https://foodcorner-app.netlify.app)
 
 ### Tools and Languages used
 - ReactJs
