@@ -15,7 +15,7 @@ function Nav() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <h4>Food Corner</h4>
+        <h4>FoodCorner</h4>
       </div>
       <ul className={`navbar__navlinks ${openMenu ? 'isMenuOpen' : ''}`}>
         {MenuItems.map((item, index) => {

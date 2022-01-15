@@ -4,6 +4,7 @@ import '../../styles/random.scss';
 import { Delivery, Salad, Second } from '../../assets/img';
 import 'animate.css';
 import { Link } from 'react-router-dom';
+import FooterContainer from '../Footer/FooterContainers/footer';
 
 function HomePage() {
   return (
@@ -81,6 +82,7 @@ function HomePage() {
             </div>
           </div>
         </section>
+        <FooterContainer/>
       </main>
     </>
   );
