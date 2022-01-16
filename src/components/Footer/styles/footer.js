@@ -36,6 +36,11 @@ const Link = styled.a`
   margin-bottom: 28px;
   text-decoration: none;
   color: black;
+
+  &:hover {
+    color: #fbb97e;
+    transition: 0.3s ease-in-out;
+  }
 `;
 
 const Title = styled.p`
