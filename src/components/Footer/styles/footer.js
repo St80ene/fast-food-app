@@ -31,14 +31,16 @@ const Row = styled.div`
   }
 `;
 
-const Link = styled.div`
-  font-size: 18px;
+const Link = styled.a`
+  font-size: 14px;
   margin-bottom: 28px;
   text-decoration: none;
+  color: black;
 `;
 
-const Title = styled.h3`
+const Title = styled.p`
   margin-bottom: 40px;
+  font-weight: bold;
 `;
 
 export { Container, Column, Row, Title, Link, Wrapper };
