@@ -31,14 +31,21 @@ const Row = styled.div`
   }
 `;
 
-const Link = styled.div`
-  font-size: 18px;
+const Link = styled.a`
+  font-size: 14px;
   margin-bottom: 28px;
   text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: #fbb97e;
+    transition: 0.3s ease-in-out;
+  }
 `;
 
-const Title = styled.h3`
+const Title = styled.p`
   margin-bottom: 40px;
+  font-weight: bold;
 `;
 
 export { Container, Column, Row, Title, Link, Wrapper };

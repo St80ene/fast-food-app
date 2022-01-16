@@ -1,5 +1,10 @@
 import React from 'react';
 import Footer from '..';
+import {
+  AiOutlineTwitter,
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+} from 'react-icons/ai';
 
 function FooterContainer() {
   return (
@@ -38,9 +43,15 @@ function FooterContainer() {
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>Social</Footer.Title>
-            <Footer.Link href="#">Facebook</Footer.Link>
-            <Footer.Link href="#">Twitter</Footer.Link>
-            <Footer.Link href="#">Instagram</Footer.Link>
+            <Footer.Link href="#">
+              <AiOutlineInstagram /> Instagram
+            </Footer.Link>
+            <Footer.Link href="#">
+              <AiOutlineTwitter /> Twitter
+              </Footer.Link>
+              <Footer.Link href="#">
+                <AiOutlineFacebook /> Facebook
+              </Footer.Link>
           </Footer.Column>
         </Footer.Row>
       </Footer.Wrapper>
