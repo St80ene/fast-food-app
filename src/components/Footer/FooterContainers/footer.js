@@ -4,9 +4,11 @@ import {
   AiOutlineTwitter,
   AiOutlineFacebook,
   AiOutlineInstagram,
+  AiOutlineCopyright,
 } from 'react-icons/ai';
 
 function FooterContainer() {
+
   return (
     <Footer>
       <Footer.Wrapper>
@@ -48,12 +50,15 @@ function FooterContainer() {
             </Footer.Link>
             <Footer.Link href="#">
               <AiOutlineTwitter /> Twitter
-              </Footer.Link>
-              <Footer.Link href="#">
-                <AiOutlineFacebook /> Facebook
-              </Footer.Link>
+            </Footer.Link>
+            <Footer.Link href="#">
+              <AiOutlineFacebook /> Facebook
+            </Footer.Link>
           </Footer.Column>
         </Footer.Row>
+        <Footer.Note>
+          <AiOutlineCopyright /> {new Date().getFullYear()}
+        </Footer.Note>
       </Footer.Wrapper>
     </Footer>
   );

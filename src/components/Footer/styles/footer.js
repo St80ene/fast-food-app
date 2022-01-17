@@ -48,4 +48,10 @@ const Title = styled.p`
   font-weight: bold;
 `;
 
-export { Container, Column, Row, Title, Link, Wrapper };
+const Note = styled.p`
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+`;
+
+export { Container, Column, Row, Title, Link, Wrapper, Note };
