@@ -1,9 +1,10 @@
 import React from 'react';
 import './Home.scss';
 import '../../styles/random.scss';
-import { Delivery, Salad, Second } from '../../assets/img';
+import { Ball, Delivery, Salad, Second } from '../../assets/img';
 import 'animate.css';
 import { Link } from 'react-router-dom';
+import Img from 'react-cool-img';
 import FooterContainer from '../Footer/FooterContainers/footer';
 
 function HomePage() {
@@ -23,7 +24,7 @@ function HomePage() {
               </div>
             </div>
             <div className="hero__intro-image">
-              <img alt="food" src={Second} />
+              <Img alt="food" placeholder={Ball} debounce={700} src={Second} />
             </div>
           </div>
         </section>
@@ -38,7 +39,13 @@ function HomePage() {
         <section>
           <div className="experience">
             <div className="experience__exImage">
-              <img alt="salad" src={Salad} />
+              <Img
+                placeholder={Ball}
+                alt="salad"
+                debounce={700}
+                src={Salad}
+                lazy={true}
+              />
             </div>
             <div className="experience__exText">
               <div className="experience__exText__wrapper">
@@ -52,9 +59,7 @@ function HomePage() {
                   is why we try our best to give <br />
                   you that nutrition you so deserve
                 </p>
-                <Link to="/menu">
-                  Checkout Our Menu
-                </Link>
+                <Link to="/menu">Checkout Our Menu</Link>
               </div>
             </div>
           </div>
@@ -72,17 +77,20 @@ function HomePage() {
                   We make sure your food arrives <br />
                   on time for your healthy consumption.
                 </p>
-                <Link to="/services">
-                  Check Out Our Services
-                </Link>
+                <Link to="/services">Check Out Our Services</Link>
               </div>
             </div>
             <div className="hero__intro-image">
-              <img alt="we deliver to your doorstep" src={Delivery} />
+              <Img
+                placeholder={Ball}
+                alt="we deliver to your doorstep"
+                debounce={700}
+                src={Delivery}
+              />
             </div>
           </div>
         </section>
-        <FooterContainer/>
+        <FooterContainer />
       </main>
     </>
   );
