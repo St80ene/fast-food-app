@@ -4,9 +4,11 @@ import '../../styles/general.scss';
 
 function MenuPage() {
   return (
-    <div className="menu layout">
+    <>
+    <main className="menu layout">
       <p>Our Menu</p>
-    </div>
+    </main>
+    </>
   );
 }
 
