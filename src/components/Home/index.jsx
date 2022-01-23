@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import '../../styles/random.scss';
+import '../../styles/general.scss';
 import { Ball, Delivery, Salad, Second } from '../../assets/img';
 import 'animate.css';
 import { Link } from 'react-router-dom';
