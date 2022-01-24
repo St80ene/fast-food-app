@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ServicePage from '../components/Services';
 
 function Services() {
   return (
-    <div>
-      <p>Our Services</p>
-    </div>
-  )
+    <>
+      <ServicePage />
+    </>
+  );
 }
 
 export default Services;
