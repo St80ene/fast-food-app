@@ -1,13 +1,17 @@
 import React from 'react';
-import './Menu.scss';
+import { Container, ImgWrapper, ImgContainer } from './styles';
+import { Construction } from '../../assets/img/index';
 import '../../styles/general.scss';
 
 function MenuPage() {
   return (
     <>
-    <main className="menu layout">
-      <p>Our Menu</p>
-    </main>
+      <Container className="layout">
+        <ImgWrapper>
+          <ImgContainer src={Construction} />
+          <p>Comrade, food still dey fire 🔥, abeg come back later</p>
+        </ImgWrapper>
+      </Container>
     </>
   );
 }

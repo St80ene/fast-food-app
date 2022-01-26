@@ -9,9 +9,9 @@ function ServicePage() {
       <Container className="layout">
         <ImgWrapper>
           <ImgContainer src={Construction} />
+          <p>We still dey arrange the services, abeg check later, thanks</p>
         </ImgWrapper>
       </Container>
-        <p>Page under construction</p>
     </>
   );
 }
