@@ -3,23 +3,17 @@ import styled from 'styled-components';
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  margin: auto;
-  position: relative;
+  margin: 0 auto;
   text-align: center;
 `;
 
 const ImgContainer = styled.img`
   width: 18rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 18rem;
 `;
 
 const ImgWrapper = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
+  margin-top: 8rem;
 `;
 
-export { Container, ImgWrapper, ImgContainer };
+export { Container, ImgContainer, ImgWrapper };

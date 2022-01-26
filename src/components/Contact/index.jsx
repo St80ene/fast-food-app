@@ -1,17 +1,17 @@
 import React from 'react';
-import { Wrapper, ImgWrapper, ImgContainer } from './styles';
+import { Container, ImgWrapper, ImgContainer } from './styles';
 import { Construction } from '../../assets/img/index';
 import '../../styles/general.scss';
 
 function ContactPage() {
   return (
     <>
-      <Wrapper className="layout">
+      <Container className="layout">
         <ImgWrapper>
           <ImgContainer src={Construction} />
+          <p>Omo, we never get phone for now, later things, Comrade</p>
         </ImgWrapper>
-        <p>Page under construction</p>
-      </Wrapper>
+      </Container>
     </>
   );
 }
