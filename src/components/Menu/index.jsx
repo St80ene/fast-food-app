@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ImgWrapper, ImgContainer } from './styles';
+import { Card, CardContainer, Container, Heading, Overlay } from './styles';
 import { Construction } from '../../assets/img/index';
 import '../../styles/general.scss';
 
@@ -7,10 +7,49 @@ function MenuPage() {
   return (
     <>
       <Container className="layout">
-        <ImgWrapper>
-          <ImgContainer src={Construction} />
-          <p>Comrade, food still dey fire 🔥, abeg come back later</p>
-        </ImgWrapper>
+        <Heading>Our Menu</Heading>
+        <CardContainer>
+          <Card style={{ backgroundImage: 'url(' + Construction + ')', backgroundSize: 'cover' }}>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+          <Card>
+            <Overlay></Overlay>
+            Card
+          </Card>
+        </CardContainer>
       </Container>
     </>
   );
