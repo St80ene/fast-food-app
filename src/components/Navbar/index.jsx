@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { MenuItems } from '../MenuItems';
+import { NavItems } from '../MenuItems';
 import './Navbar.scss';
 
 function Nav() {
@@ -18,10 +18,14 @@ function Nav() {
         <h4>FoodCorner</h4>
       </div>
       <ul className={`navbar__navlinks ${openMenu ? 'isMenuOpen' : ''}`}>
-        {MenuItems.map((item, index) => {
+        {NavItems.map((item, index) => {
           return (
             <li className={item.cName} key={index}>
-              <Link className={`${item.cName}__link`} to={item.url} onClick={menuToggleHandler}>
+              <Link
+                className={`${item.cName}__link`}
+                to={item.url}
+                onClick={menuToggleHandler}
+              >
                 {item.page}
               </Link>
             </li>
