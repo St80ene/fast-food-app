@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardContainer, Container, Heading, Overlay } from './styles';
-import { Construction } from '../../assets/img/index';
 import { MenuItems } from '../MenuItems';
 import '../../styles/general.scss';
 
@@ -15,7 +14,7 @@ function MenuPage() {
               <Card
                 key={index}
                 style={{
-                  backgroundImage: 'url(' + Construction + ')',
+                  backgroundImage: 'url(' + item.image + ')',
                   backgroundSize: 'cover',
                 }}
               >

@@ -1,3 +1,5 @@
+import { Breakfast, Lunch, Dinner, Dessert } from '../assets/img/index';
+
 export const NavItems = [
   { page: 'Home', url: '/#', cName: 'navbar__navlinks__item' },
   { page: 'Menu', url: '/menu', cName: 'navbar__navlinks__item' },
@@ -7,8 +9,8 @@ export const NavItems = [
 ];
 
 export const MenuItems = [
-  { category: 'Breakfast', image: '' },
-  { category: 'Lunch', image: '' },
-  { category: 'Dinner', image: '' },
-  { category: 'Dessert', image: '' },
+  { category: 'Breakfast', image: Breakfast },
+  { category: 'Lunch', image: Lunch },
+  { category: 'Dinner', image: Dinner },
+  { category: 'Dessert', image: Dessert },
 ];
