@@ -40,7 +40,7 @@ const Card = styled.div`
   border: 1px solid gray;
   border-radius: 4px;
   width: 96%;
-  min-height: 300px;
+  min-height: 400px;
   position: relative;
 
   background-size: cover;
@@ -58,7 +58,12 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.363);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: white;
 `;
 
 export { Container, Heading, CardContainer, Card, Overlay };
