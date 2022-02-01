@@ -59,9 +59,6 @@ const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background: transparent;
-  /* background: linear-gradient(89.91deg, rgba(0, 0, 0, 0) 0.03%, #033154 40.1%); */
-  /* opacity: 0.7; */
-  /* transform: matrix(-1, 0, 0.01, -1, 0, 0); */
 `;
 
 export { Container, Heading, CardContainer, Card, Overlay };
