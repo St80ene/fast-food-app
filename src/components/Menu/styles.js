@@ -20,9 +20,12 @@ const Heading = styled.h2`
 
 const CardContainer = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
+  /* border: 1px solid black;  */
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
 
   @media screen and (min-width: 850px) {
     flex-direction: row;
@@ -34,13 +37,14 @@ const CardContainer = styled.div`
 const Card = styled.div`
   & > img {
     height: auto;
+    /* height: 250px; */
     width: 100%;
   }
   margin: 1rem auto;
   border: 1px solid gray;
   border-radius: 4px;
   width: 96%;
-  min-height: 400px;
+  height: 450px;
   position: relative;
 
   background-size: cover;
@@ -52,18 +56,8 @@ const Card = styled.div`
   }
 `;
 
-const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.363);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  color: white;
+const CardBody = styled.div`
 `;
 
-export { Container, Heading, CardContainer, Card, Overlay };
+
+export { Container, Heading, CardContainer, Card, CardBody };
