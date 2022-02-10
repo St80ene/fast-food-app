@@ -46,7 +46,6 @@ const Card = styled.div`
   width: 96%;
   height: 450px;
   position: relative;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
