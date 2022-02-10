@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContainer, Container, Heading, Overlay } from './styles';
+import { Card, CardBody, CardContainer, Container, Heading } from './styles';
 import { MenuItems } from '../MenuItems';
 import '../../styles/general.scss';
 
@@ -13,12 +13,14 @@ function MenuPage() {
             return (
               <Card
                 key={index}
-                style={{
-                  backgroundImage: 'url(' + item.image + ')',
-                  backgroundSize: 'cover',
-                }}
+                style={
+                  {
+                    // backgroundImage: 'url(' + item.image + ')',
+                    // backgroundSize: 'cover',
+                  }
+                }
               >
-                <Overlay>{item.category}</Overlay>
+                <CardBody>Card body</CardBody>
               </Card>
             );
           })}
