@@ -1,5 +1,17 @@
 import React from 'react';
-import { Card, CardBody, CardContainer, Container, Heading } from './styles';
+import {
+  Container,
+  Heading,
+  CardContainer,
+  Card,
+  CardBody,
+  CardBodyWrapper,
+  FoodTitle,
+  FoodDescription,
+  PriceWrapper,
+  AddToCartButton,
+  FoodPriceTag,
+} from './styles';
 import { MenuItems } from '../MenuItems';
 import '../../styles/general.scss';
 
@@ -13,14 +25,18 @@ function MenuPage() {
             return (
               <Card
                 key={index}
-                style={
-                  {
-                    // backgroundImage: 'url(' + item.image + ')',
-                    // backgroundSize: 'cover',
-                  }
-                }
+                img={item.image}
               >
-                <CardBody>Card body</CardBody>
+                <CardBodyWrapper>
+                  <CardBody>
+                    <FoodTitle>{item.title}</FoodTitle>
+                    <FoodDescription>{item.description}</FoodDescription>
+                    <PriceWrapper>
+                      <FoodPriceTag>₦{item.price}</FoodPriceTag>
+                      <AddToCartButton>Add to Cart</AddToCartButton>
+                    </PriceWrapper>
+                  </CardBody>
+                </CardBodyWrapper>
               </Card>
             );
           })}
